@@ -1,0 +1,99 @@
+html, body{ 
+	/* Allows website to use 100% of screen */
+	min-width: 100%;
+	padding: 0;
+	margin: 0;
+
+	font-family: arial,sans-serif;
+	font-size: 13px;
+}
+#header {
+	/* Gives header full width, and pins it to the top */
+	width: 100%;
+	position: fixed;
+	top: 0%;
+}
+.header_Content {
+	/* Pulls the content in the header to the right as seen on google current design, spaces it out */
+	position: fixed;
+	right: 0%;
+	padding-right: 1.5%;
+	padding-top: 1.5%;
+}
+.header_Content a {
+	/* Spaces out and colors the links, based on googles current design */
+	padding-right: 5px;
+	text-decoration: none;
+	color: #222;
+}
+/* Custom button style */ 
+a.button{
+	background: #4285f4;
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+	font-weight: bold;
+	padding: 8px;
+    text-align: center;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+#content {
+	/* Center content, found at http://stackoverflow.com/a/33961729 */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+form {
+	/* Center form elements */
+ 	display: inline-block;
+    text-align: center;
+}
+
+#content p {
+	text-align: center;
+}
+
+input[type=submit] {	
+    margin: 5px;
+}
+
+	
+input[type=text] {	
+    width: 480px;
+    transition: ease-in-out, width .35s ease-in-out;
+    padding: 5px;
+}
+
+
+#footer {
+	background-color: #f2f2f2;	
+	width: 100%;
+	position: fixed;
+	height: auto;
+	bottom: 0%;
+	border-top: 1px solid #e4e4e4;
+	padding-top: 15px;
+	padding-bottom: 15px;	
+}
+#footer a {
+	text-decoration: none;
+	color: #666;
+	padding: 15px;		
+}
+.footer_Left {
+	float: left;
+}
+.footer_Right{
+	float: right;
+} 
